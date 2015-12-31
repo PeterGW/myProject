@@ -1,0 +1,139 @@
+<!DOCTYPE html> 
+<html > 
+<head> 
+    <title>通用的二级菜单</title> 
+    <meta charset='utf-8'/>
+    <style type="text/css">
+        body {
+            padding: 0;
+            margin: 0;
+
+        }
+        ul{
+            list-style:none;
+        }
+        #menu {
+            width:100px;
+            text-align: center;
+        }
+        li{
+            line-height: 30px;
+            position: relative;
+        }
+        a{
+            text-decoration: none;
+        }
+        #div1 { 
+            width: 100px;
+            display:none; 
+            font-size:12px; 
+            position:absolute; 
+            left:58px;
+            top:0px;
+            background-color:green; 
+            width:320px; 
+        } 
+        #div2 { 
+            display:none; 
+            font-size:12px; 
+            position:absolute; 
+            left:58px;
+            top:0px;
+            background-color:green; 
+            width:320px; 
+        } 
+        #div3 { 
+            display:none; 
+            font-size:12px; 
+            position:absolute; 
+            left:58px;
+            top:0px;
+            background-color:green; 
+            width:320px; 
+        } 
+        #div4 { 
+            display:none; 
+            font-size:12px; 
+            position:absolute; 
+            left:58px;
+            top:0px;
+            background-color:green; 
+            width:320px; 
+        } 
+    </style> 
+    <script language="javascript" type="text/javascript"> 
+        //显示层 
+        function showDiv(divName) { 
+           document.getElementById(divName).style.display = "block"; 
+        } 
+        //隐藏层 
+        function hiddenDiv(divName) { 
+            document.getElementById(divName).style.display = "none"; 
+        } 
+    </script> 
+</head> 
+<body> 
+    <div id="menu"> 
+        <ul class="menu_1">
+            <li id="c_1" onmouseover="showDiv('div1')" onmouseout="hiddenDiv('div1')" >
+                <a href="#" >菜单一</a>
+                <div id="div1"> 
+                    <ul>
+                        <li>
+                            <a href="#">子菜单一</a>
+                        </li>
+                    </ul> 
+                </div>
+            </li>
+            <li id="c_2" onmouseover="showDiv('div2')" onmouseout="hiddenDiv('div2')">
+                <a href="#" >菜单二</a>
+                <div id="div2"> 
+                    <ul>
+                        <li>
+                            <a href="#">子菜单一</a>
+                        </li>
+                        <li>
+                            <a href="#">子菜单二</a>
+                        </li>
+                    </ul> 
+                </div>     
+            </li>
+            <li id="c_3" onmouseover="showDiv('div3')" onmouseout="hiddenDiv('div3')">
+                <a href="#" >菜单三</a>
+                <div id="div3"> 
+                    <ul>
+                        <li>
+                            <a href="#">子菜单一</a>
+                        </li>
+                        <li>
+                            <a href="#">子菜单二</a>
+                        </li>
+                        <li>
+                            <a href="#">子菜单三</a>
+                        </li>
+                    </ul>  
+                </div> 
+            </li>
+            <li id="c_4" onmouseover="showDiv('div4')" onmouseout="hiddenDiv('div4')">
+                <a href="#" >菜单四</a>
+                <div id="div4"> 
+                    <ul>
+                        <li>
+                            <a href="#">子菜单一</a>
+                        </li>
+                        <li>
+                            <a href="#">子菜单二</a>
+                        </li>
+                        <li>
+                            <a href="#">子菜单三</a>
+                        </li>
+                        <li>
+                            <a href="#">子菜单四</a>
+                        </li>
+                    </ul>  
+                </div> 
+            </li>
+        </ul>
+    </div> 
+</body> 
+</hml>
